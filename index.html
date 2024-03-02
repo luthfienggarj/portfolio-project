@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Luthfi</title>
+    <!---CSS Link--->
+    <link rel="stylesheet" href="porto-style.css">
+    <!---Font Awesome--->
+    <script src="https://kit.fontawesome.com/b818ade590.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!--------Header Logo, Home, About, Photo, Name------->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/enggar-logo-cut.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portofolio">Portofolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>I'm a <span class="auto-type"></span></p>
+                <h1>Hi, I'm <span>Luthfi Enggar<br>Juang</span> from <span>Indo</span>nesia</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--------About Me------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                
+                <div class="about-col-1">
+                    <img src="./images/user.png">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique assumenda consequatur modi saepe quisquam. 
+                    Nulla, eaque velit. Sit quod eius rerum! Laudantium autem dignissimos rem similique quisquam fugiat, quaerat hic.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certificate')">Certificate</p>
+                    </div>
+
+                    <!----Skills Tab Content---->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul style="list-style: none;">
+                            <li><span>Web Designer</span><br>Designing Website</li>
+                            <li><span><br>Front-End Developer</span><br>Building Website</li>
+                            <li><span><br>Business Analyst</span><br>Identifying Business Areas</li>
+                        </ul>
+                    </div>
+
+                    <!----Experience Tab Content---->
+                    <div class="tab-contents" id="experience">
+                        <ul style="list-style: none;">
+                            <li><span><br>2022 - 2023</span><br>Business Analyst at Sinarmas</li>
+                            <li><span><br>2021 - 2022</span><br>Team lead at Gojek</li>
+                            <li><span><br>2020 - 2021</span><br>Web Designer Intern at Microsoft</li>
+                        </ul>
+                    </div>
+
+                    <!----Education Tab Content---->
+                    <div class="tab-contents" id="education">
+                        <ul style="list-style: none;">
+                            <li><span><br>2020 - Present</span><br>Mercu Buana University</li>
+                            <li><span><br>2017 - 2020</span><br>SMAN 3 Kota Tangerang</li>
+                        </ul>
+                    </div>
+
+                    <!----IT Certificate Tab Content---->
+                    <div class="tab-contents" id="certificate">
+                        <ul style="list-style: none;">
+                            <li><span><br>CCNA</span><br>Natacad Academy</li>
+                            <li><span><br>Database</span><br>Oracle Academy</li>
+                            <li><span><br>Business Analyst</span><br>Coursera</li>
+                            <li><span><br>Project Management Fundamental</span><br>Oracle Academy</li>
+                            <li><span><br>FRONT-END DEVELOPMENT | HTML, CSS , JAVASCRIPT</span><br>Great Learning</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!------Services Section------->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-object-group"></i>
+                <h2>Web Designer</h2>
+                <p><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam non omnis iure nostrum dolores.</p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Front-End Developer</h2>
+                <p><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam non omnis iure nostrum dolores.</p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-chart-line"></i>
+                <h2>Business Analyst</h2>
+                <p><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quibusdam non omnis iure nostrum dolores.</p>
+                <a href="#">Learn More</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!------Portofolio Section------->
+
+<div id="portofolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+
+            <div class="work">
+                <img src="./images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Magnam, asperiores error. Velit ut voluptatibus quaerat voluptatum.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="./images/work-2.png">
+                <div class="layer">
+                    <h3>History Article</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Magnam, asperiores error. Velit ut voluptatibus quaerat voluptatum.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="./images/work-3.png">
+                <div class="layer">
+                    <h3>Javascript Game</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Magnam, asperiores error. Velit ut voluptatibus quaerat voluptatum.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- <a href="#" class="btn">See More</a> -->
+    </div>
+</div>
+
+<!------Contact Section------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 081382226881</p>
+
+                <div class="social-icons">
+                    <!-- <a href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a> -->
+                    <!-- <a href="#"><i class="fa-brands fa-twitter"></i></a> -->
+                    <a href="https://instagram.com/luthfienggarjuang?igshid=NTdlMDg3MTY="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/luthfi-enggar-juang-718654254"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Luthfi. All Right Reserved. Made with <i class="fa-solid fa-heart"></i> by Luthfi Enggar Juang</p>
+    </div>
+</div>
+
+
+
+
+
+<!------Script For Typing Animation------->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> <!---Script Link for Typing Loop---> <!--- Just Search Typed Js--->
+
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Web Designer", "Front-End Developer", "Business Analyst"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop : true
+        })
+    </script>
+
+<!------Script For Showing Tab Content Skills, Experience, Education, IT Certificate------->
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+<!------Script For Show & Close Tab Menu------->
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu()
+        {
+            sidemenu.style.right = "0";
+        }
+        function closemenu()
+        {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+<!------Script For Contact Form To Google Spreadsheet------->
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz9FvV76_u3ifxWQ2NCUpkOdoxQDk6e0WTVJZ6_VaTTS-Xl_fX3bnVp8nR-8cNVigkG1w/exec'
+    const form = document.forms['submit-to-google-sheet']
+    constmsg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent succesfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
